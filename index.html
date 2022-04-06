@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Área del triángulo</h1>
+        <p id="description">
+            Dada la base y altura de un triángulo, hallar su área.
+        </p>
+    </header>
+    <main>
+        <form name="formu" action="" class="formulario">
+            <h2>Ingreso de datos</h2>
+            <div class="form-control">
+                <label for="tipost" class="formulario_label" >Tipo de triángulo:</label>
+                <select id="tipost" name="tipost" class="formulario_input">
+                    <option value="Isosceles">Isósceles</option>
+                    <option value="Escaleno">Escaleno</option>
+                    <option value="Equilatero">Equilátero</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="medida" class="formulario_label">Medida: </label>
+                <select name="medidas" id="medidas" class="formulario_input">
+                    <option value="m">M</option>
+                    <option value="cm">CM</option>
+                    <option value="mm">MM</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="Base" class="formulario_label">Base:</label>
+                <input type="text" id="base" placeholder="Ingrese la base" class="formulario_input" />
+            </div>
+            <div class="form-control">
+                <label for="Altura" class="formulario_label">Altura:</label>
+                <input type="text" id="altura" placeholder="Ingrese la altura" class="formulario_input" />
+            </div>
+            <div class="form-control">
+                <input type="button" onclick="limpiar();" class="formulario_button" value="Limpiar campos" />
+                <input type="button" onclick="validar();" class="formulario_button" value="Calcular" />
+            </div>
+            <div class="form-control">
+                <label for="Resultado" class="formulario_label">Área del triángulo:</label>
+                <input type="text" placeholder="Resultado" class="formulario_input" id="resultado" />
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Autores: Ayrton Avalos (6616), Sebastián Bolaños (6617)</p>
+        &copy;Derechos Reservados 2020-2021
+    </footer>
+</body>
+<script type="text/javascript" src="AreaTriangulo_6617-6616.js"></script>
+</html>
+
+    

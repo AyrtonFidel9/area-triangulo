@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-image: url('/img/fondo.jpg');
+    background-repeat: none;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.formulario {
+    background-color: #d8d2cba1;
+    border-radius: 7px;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+form .form-control {
+    position: relative;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(242, 242, 242, 1) 63%, rgba(230, 230, 230, 1) 100%);
+    height: 17vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.formulario_input {
+    border-radius: 5px;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario_input,
+.formulario_label {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.formulario_label {
+    top: calc(17% - 2px);
+    font-weight: 600;
+    position: absolute;
+}
+
+.formulario_input {
+    height: 70px;
+    padding-left: 15px;
+    padding-top: 27px;
+    font-weight: 200;
+    color: #2b2b2b;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.input_form {
+    display: flex;
+}
+
+.formulario_button {
+    background-color: #F0A500;
+    padding: 10px 20px;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    font-size: 15px;
+    border-radius: 50px;
+    border-color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.formulario_button:hover {
+    background-color: #D8D2CB;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(242, 242, 242, 1) 63%, rgba(230, 230, 230, 1) 100%);
+}
+
+footer>p {
+    font-size: 18px;
+    text-align: center;
+}
