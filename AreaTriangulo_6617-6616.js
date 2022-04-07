@@ -14,17 +14,17 @@ function getData() {
 function validar() {
   getData();
   if (!Number.isNaN(base) && !Number.isNaN(altura)) {
-    if(base !== 0 && altura !== 0)
+    if(base !== 0 && altura !== 0 && base>0 && altura>0)
     {
       alert("Datos ingresados con éxito");
       hallar();
     }
     else{
-      alert("El valor de 0 no es válido")
+      alert("Valores no válidos")
       limpiar();
     }
   }else{
-    alert("No se admiten caracteres ni espacios vacios");
+    alert("No se admiten caracteres ni espacios vacíos");
     limpiar();
   }
 }
