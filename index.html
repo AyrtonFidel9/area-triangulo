@@ -20,6 +20,7 @@
     <main>
         <form name="formu" action="" class="formulario">
             <h2>Ingreso de datos</h2>
+            <!--
             <div class="form-control">
                 <label for="tipost" class="formulario_label" >Tipo de triángulo:</label>
                 <select id="tipost" name="tipost" class="formulario_input">
@@ -28,7 +29,7 @@
                     <option value="Equilatero">Equilátero</option>
                     <option value="Rectangulo">Rectángulo</option>
                 </select>
-            </div>
+            </div>-->
             <div class="form-control">
                 <label for="medida" class="formulario_label">Medida: </label>
                 <select name="medidas" id="medidas" class="formulario_input">
@@ -39,43 +40,43 @@
             </div>
             <div class="form-control">
                 <label for="Base" class="formulario_label">Base:</label>
-                <input type="text" id="base" placeholder="Ingrese la base" class="formulario_input" />
+                <input type="number" id="base" placeholder="Ingrese la base" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="Altura" class="formulario_label">Altura:</label>
-                <input type="text" id="altura" placeholder="Ingrese la altura" class="formulario_input" />
+                <input type="number" id="altura" placeholder="Ingrese la altura" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="ladoa" class="formulario_label">Lado A:</label>
-                <input type="text" id="ladoa" placeholder="Ingrese el lado a" class="formulario_input" />
+                <input type="number" id="ladoa" placeholder="Ingrese el lado a" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="ladob" class="formulario_label">Lado B:</label>
-                <input type="text" id="ladob" placeholder="Ingrese el lado b" class="formulario_input" />
+                <input type="number" id="ladob" placeholder="Ingrese el lado b" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="ladoc" class="formulario_label">Lado C:</label>
-                <input type="text" id="ladoc" placeholder="Ingrese lado c" class="formulario_input" />
+                <input type="number" id="ladoc" placeholder="Ingrese lado c" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="anguloa" class="formulario_label">Ángulo A:</label>
-                <input type="text" id="anguloa" placeholder="Ingrese el ángulo a" class="formulario_input" />
+                <input type="number" id="anguloa" placeholder="Ingrese el ángulo a" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="angulob" class="formulario_label">Ángulo B:</label>
-                <input type="text" id="angulob" placeholder="Ingrese el ángulo b" class="formulario_input" />
+                <input type="number" id="angulob" placeholder="Ingrese el ángulo b" class="formulario_input" />
             </div>
             <div class="form-control">
                 <label for="anguloc" class="formulario_label">Ángulo C:</label>
-                <input type="text" id="anguloc" placeholder="Ingrese el ángulo c" class="formulario_input" />
+                <input type="number" id="anguloc" placeholder="Ingrese el ángulo c" class="formulario_input" />
             </div>
             <div class="form-control">
                 <input type="button" onclick="limpiar();" class="formulario_button" value="Limpiar campos" />
-                <input type="button" onclick="validar();" class="formulario_button" value="Calcular" />
+                <input type="button" class="formulario_button" value="Calcular" id="calcular"/>
             </div>
             <div class="form-control">
                 <label for="Resultado" class="formulario_label">Área del triángulo:</label>
-                <input type="text" placeholder="Resultado" class="formulario_input" id="resultado" />
+                <input type="number" placeholder="Resultado" class="formulario_input" id="resultado" />
             </div>
         </form>
     </main>
